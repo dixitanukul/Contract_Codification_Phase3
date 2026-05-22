@@ -1,0 +1,435 @@
+PROMPT 1 — Repository Understanding + Dependency Mapping
+
+You are acting as a principal architect, staff-level AI engineer, and enterprise platform reviewer.
+
+Your first task is NOT to critique immediately.
+
+Your first task is to deeply understand the entire repository and architecture before making any judgments.
+
+You must analyze the complete project end-to-end and build a mental model of:
+
+- extraction pipeline
+- reimbursement modeling
+- state engine
+- amendment lineage
+- vector search
+- hybrid retrieval
+- reranking
+- citation verification
+- intelligence layer
+- scenario modeling
+- leverage scoring
+- SQL schemas
+- documentation
+- orchestration
+- serving layer
+
+I want a COMPLETE dependency graph of the platform.
+
+Do NOT summarize superficially.
+
+I want you to determine:
+
+1. What the platform is ACTUALLY trying to become
+2. What the canonical source of truth is
+3. Which layers are foundational
+4. Which layers are derivative
+5. Which layers create real business value
+6. Which layers are redundant
+7. Which layers duplicate semantics
+8. Where temporal logic truly lives
+9. How reimbursement intelligence is computed
+10. Whether the platform architecture is coherent
+
+Analyze all folders and build a complete architectural map.
+
+For every major module answer:
+
+- responsibility
+- inputs
+- outputs
+- downstream consumers
+- architectural necessity
+- business value
+- redundancy risk
+- scalability implications
+
+Then produce:
+
+1. Complete architecture diagram
+2. Data flow diagram
+3. Dependency graph
+4. Canonical entity map
+5. Temporal modeling flow
+6. Retrieval flow
+7. Intelligence flow
+8. State reconstruction flow
+9. Architectural strengths
+10. Architectural weaknesses
+
+MOST IMPORTANT:
+
+I want you to identify:
+- duplicated business logic
+- layered semantic duplication
+- over-normalization
+- extraction artifacts nobody consumes
+- tables that exist only for architecture theater
+- places where retrieval-time reasoning would be superior
+- separation-of-concern violations
+- temporal modeling inconsistencies
+
+Then classify every major layer into:
+
+- Mission Critical
+- Valuable
+- Nice To Have
+- Redundant
+- Dead Weight
+
+Finally produce:
+
+FINAL PLATFORM JUDGMENT
+
+Answer:
+- Is this platform architecturally coherent?
+- Is this actually enterprise-grade?
+- Is this a prototype pretending to be enterprise?
+- What percentage is genuinely valuable?
+- What percentage is complexity without ROI?
+- What would a FAANG/principal engineer think?
+- What would an enterprise buyer think?
+- What should be rebuilt entirely?
+
+Be brutally honest.
+
+==================================================
+
+PROMPT 2 — Deep Extraction Layer Analysis
+
+Now that you understand the COMPLETE repository and platform architecture, perform a deep architectural review of this layer:
+
+LLM Extraction → Validation → Consolidation
+
+Analyze these modules deeply:
+
+04_llm_prompts.py
+05_llm_extraction.py
+06_validation.py
+07_consolidation.py
+08_build_rates.py
+09_build_terms.py
+10_build_documents.py
+
+I do NOT want superficial explanation.
+
+I want an enterprise architecture critique.
+
+For EACH module provide:
+
+1. Actual responsibility
+2. Architectural role
+3. Inputs
+4. Outputs
+5. Downstream dependencies
+6. Whether downstream systems truly depend on it
+7. Whether it creates meaningful business value
+8. Whether it duplicates later layers
+9. Whether it belongs here architecturally
+10. Whether it should exist at all
+
+Then determine:
+
+- which outputs are foundational
+- which outputs are decorative
+- which outputs are never meaningfully consumed
+- which outputs should instead be retrieval-time inference
+- which outputs belong in the state engine instead
+- where business semantics are duplicated
+- where legal semantics are modeled twice
+
+IMPORTANT:
+
+Determine whether this architecture is fundamentally:
+
+A) Structured extraction-first
+
+PDF → JSON → Normalized Tables → Intelligence
+
+OR
+
+B) Retrieval-first
+
+PDF → Chunking → Embeddings → Runtime Reasoning
+
+Then answer:
+
+- which architecture is more appropriate here
+- what enterprise systems actually do
+- what should remain structured
+- what should become retrieval-driven
+- what should become graph/state-driven
+
+Be extremely critical.
+
+I want principal-engineer-level analysis.
+
+==================================================
+
+PROMPT 3 — Validation Layer Audit
+
+Perform a complete enterprise-grade audit of:
+
+06_validation.py
+
+I want you to determine whether this is:
+
+- real enterprise validation
+OR
+- superficial schema checking pretending to be governance
+
+Analyze deeply:
+
+1. Schema validation
+2. Legal consistency validation
+3. Temporal consistency
+4. Amendment consistency
+5. Reimbursement formula validation
+6. Hallucination prevention
+7. Citation grounding
+8. Confidence scoring
+9. Referential integrity
+10. Canonical entity validation
+11. Business rule enforcement
+12. State consistency
+13. Extraction quality assurance
+14. Observability
+15. Error recovery
+
+Determine:
+
+- what this layer ACTUALLY protects against
+- what risks still remain
+- what fake rigor exists
+- what real rigor exists
+- whether this would survive enterprise audit scrutiny
+
+Then compare this implementation against:
+
+- enterprise legal AI systems
+- healthcare payer platforms
+- production-grade AI extraction systems
+
+Then answer:
+
+1. Is this validation layer architecturally necessary?
+2. Is it correctly placed?
+3. Is it sufficient?
+4. Is it weak?
+5. Is it overengineered?
+6. What should be added?
+7. What should be removed?
+8. What should move to downstream verification instead?
+
+MOST IMPORTANT:
+
+Determine whether:
+- validation belongs during extraction
+OR
+- should happen during retrieval/serving time
+OR
+- should happen inside the state engine
+
+Then design the IDEAL enterprise validation architecture for this platform.
+
+==================================================
+
+PROMPT 4 — Consolidation Layer Audit
+
+Perform a complete deep architectural review of:
+
+07_consolidation.py
+
+This is the MOST IMPORTANT analysis.
+
+I want you to determine whether consolidation is:
+
+A) A true canonical contract-state construction layer
+
+OR
+
+B) Merely an intermediate merge layer producing denormalized artifacts
+
+Analyze deeply:
+
+1. What consolidation is ACTUALLY doing
+2. What semantics are merged
+3. Whether canonical state is formed here
+4. Whether amendment logic belongs here
+5. Whether supersession logic is duplicated later
+6. Whether the state engine already supersedes this layer
+7. Whether temporal logic is modeled twice
+8. Whether business rules are duplicated
+9. Whether consolidation creates technical debt
+10. Whether this violates separation of concerns
+
+Then determine:
+
+- should consolidation exist at all?
+- should it emit state deltas instead?
+- should it emit graph relationships?
+- should it be folded into the state engine?
+- should it only create retrieval artifacts?
+- should it disappear entirely?
+
+IMPORTANT:
+
+I want you to map ALL downstream dependencies on consolidation outputs.
+
+For each consolidation artifact answer:
+
+- who consumes it?
+- what breaks if removed?
+- is it foundational?
+- is it decorative?
+- is it redundant?
+
+Then explain:
+
+What a TRUE enterprise-grade canonical contract-state architecture would look like instead.
+
+Be brutally honest.
+
+==================================================
+
+PROMPT 5 — Table-by-Table Value Audit
+
+Perform a COMPLETE table-by-table value analysis for all artifacts generated from:
+
+- validation
+- consolidation
+- rates
+- terms
+- documents
+
+I want a REAL enterprise architecture review.
+
+For EVERY table answer:
+
+1. What business purpose does this serve?
+2. Who consumes it?
+3. Is it actively used downstream?
+4. What breaks if removed?
+5. Is it canonical or derived?
+6. Is it duplicative?
+7. Is it query-efficient?
+8. Is it future-proof?
+9. Does it support temporal modeling?
+10. Does it support reimbursement intelligence?
+11. Does it support retrieval?
+12. Does it support analytics?
+13. Is the schema correct?
+14. Is normalization correct?
+15. Should this exist at all?
+
+Then classify every table into:
+
+- Mission Critical
+- Valuable
+- Nice To Have
+- Redundant
+- Dead Weight
+
+MOST IMPORTANT:
+
+Identify:
+- tables created only for architecture theater
+- extraction artifacts nobody consumes
+- tables duplicating retrieval metadata
+- tables duplicating state engine logic
+- tables that should become graph structures instead
+- tables that should become retrieval-time inference instead
+
+Then redesign the IDEAL enterprise schema architecture for this platform.
+
+==================================================
+
+PROMPT 6 — Final Brutally Honest Architecture Verdict
+
+Now give the FINAL brutally honest enterprise architecture verdict for this platform.
+
+I want principal-engineer-level criticism.
+
+Provide:
+
+1. Executive Summary
+2. What The Platform Is REALLY Trying To Become
+3. What Actually Works
+4. What Is Genuine Innovation
+5. What Is Enterprise-Grade
+6. What Is Prototype-Level
+7. What Is Architectural Theater
+8. What Is Technically Impressive
+9. What Is Unnecessarily Complex
+10. What Should Be Deleted Immediately
+11. What Should Be Rebuilt Completely
+12. What Should Become Retrieval-Time Intelligence
+13. What Should Remain Structured
+14. What Should Become State/Graph-Driven
+15. What The Ideal Future-State Architecture Should Be
+
+Then provide:
+
+ENTERPRISE SCORECARD
+
+Score 1–10 with detailed reasoning:
+
+- Extraction Architecture
+- Validation
+- Consolidation
+- Temporal Modeling
+- Amendment Handling
+- Reimbursement Modeling
+- Retrieval Architecture
+- RAG Quality
+- Citation Grounding
+- Intelligence Layer
+- Scenario Engine
+- Observability
+- Scalability
+- Maintainability
+- Cost Efficiency
+- Production Readiness
+- Enterprise Readiness
+- Business Value
+- Technical Differentiation
+
+Then answer:
+
+1. Would a FAANG principal engineer respect this architecture?
+2. Would a healthcare payer buy this platform?
+3. Is this genuinely defensible technology?
+4. What are the strongest differentiators?
+5. What are the biggest risks?
+6. What are the biggest architectural mistakes?
+7. What is the single most valuable component?
+8. What is the weakest component?
+9. Is the extraction-heavy architecture justified?
+10. Should this platform pivot toward retrieval-centric intelligence?
+
+Finally provide:
+
+FINAL VERDICT
+
+Answer brutally honestly:
+
+- What percentage of this system is truly valuable?
+- What percentage is complexity without ROI?
+- Is this actually enterprise-grade?
+- Is this production-worthy?
+- Is this strategically impressive?
+- What would you rebuild first if given 30 days?
+- What would you rebuild first if given 6 months?
+
+Do NOT soften criticism.
+I want the truth, not encouragement.
